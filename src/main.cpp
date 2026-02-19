@@ -55,3 +55,14 @@ int trg_pin = 9;
 
 /** @brief Ultrasonic echo pin */
 int ech_pin = 10;
+/**
+ * @brief Main control loop.
+ *
+ * @details
+ * - Sends trigger pulse to ultrasonic sensor.
+ * - Measures echo duration.
+ * - Calculates distance in centimeters.
+ * - Rotates servo to 180° if object ≤ 15 cm.
+ * - Otherwise sets servo to 0°.
+ * - Prints distance on Serial Monitor.
+ */
